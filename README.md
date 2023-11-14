@@ -10,6 +10,12 @@ This repository contains my assignments for the Design and Analysis subject, imp
 - File(s): `assignment1.java`, `helperFunctions.java`
 - How to Run: [Instructions on how to run the code]
 
+### Assignment 2: [Job Sheduling]
+
+- Description: [Brief description of the assignment]
+- File(s): `assignment1.java`, `helperFunctions.java`
+- How to Run: [Instructions on how to run the code]
+
 
 <!-- Add more sections for each assignment as needed -->
 
