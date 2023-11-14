@@ -1,5 +1,4 @@
 import java.util.*;
-// import java.util.Arrays;
 public class Main
 {
 	public static void main(String[] args) {
@@ -17,8 +16,12 @@ public class Main
 	  	
 
 	  	System.out.println("Enter the deadline : ");
+	  	int maxi=-1;
 	  	for(int i=0;i<n;i++){
 	  	    deadline[i]=sc.nextInt();
+	  	  if(maxi<deadline[i])
+	  	  maxi=deadline[i];
+	  
 	  	}
 	  	
 
@@ -32,20 +35,32 @@ public class Main
 	 
 	 //sort according to profit
 	 Arrays.sort(profit);
-	 for(int i=0;i<n;i++){
+	 for(int i=0;i<n/2;i++){
 	    int k=profit[i];
 	    profit[i]=profit[n-1-i];
 	    profit[n-1-i]=k;
 	 }
 	 
-	 	 for(int i=0;i<n;i++){
-	    System.out.println(profit[i]);
-	 }
-	 
+	int[] ans=new int[maxi]; 
+	System.out.println(m.get(profit[0]));
+	for(int i=0;i<n;i++){
+	   int deadl=m.get(profit[i]);
+	   if(ans[deadl-1]==0){
+	       ans[deadl-1]=profit[i];
+	   }
+	   else {
+	       for(int j=deadl-1;j>=0;j--){
+	           	   if(ans[j]==0){
+	       ans[j]=profit[i];
+	   }
+	       }
+	   }
+	}
+	int sum=0;
+	for(int i=0;i<maxi;i++)
+	sum+=ans[i];
+	System.out.println("Profit Is "+ sum);
 	
-for(Map.Entry<Integer,Integer>enter:m.entrySet()){
-    System.out.println(enter.getKey()+" "+enter.getValue());
-}
-	    
+	
 	}
 }
