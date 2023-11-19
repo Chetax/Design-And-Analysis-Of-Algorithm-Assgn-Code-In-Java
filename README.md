@@ -6,23 +6,48 @@ This repository contains my assignments for the Design and Analysis subject, imp
 
 ### Assignment 1: [Long Number Multiplication]
 
-- Description: [Brief description of the assignment]
-- File(s): `assignment1.java`, `helperFunctions.java`
-- How to Run: [Instructions on how to run the code]
+- Description: [Divesde And Conquor]
+- File(s): `LongNumberMultiplication.java`, `helperFunctions.java`
+
 
 ### Assignment 2: [Job Sheduling]
 
-- Description: [Brief description of the assignment]
+- Description: [Greedy Algo Application]
 - File(s): `JobShedulling.java`, `helperFunctions.java`
-- How to Run: [Instructions on how to run the code]
+
+  
+### Assignment 3: [Flowd Warshall]
+
+- Description: [Shortest Disstance Form every source node  to every  other Node in Graph]
+- File(s): `flowdwarsahll.java`, `helperFunctions.java`
 
 
-<!-- Add more sections for each assignment as needed -->
+### Assignment 4: [Dijekstra]
+
+- Description: [Shortest Disstance Form One Source to every Node in Graph]
+- File(s): `Dijekstra.java`, `helperFunctions.java`
+
+  
+### Assignment 5: [KnighRidder Problem]
+
+- Description: [Backtraking Application]
+- File(s): `KnighRidderProblem.java`, `helperFunctions.java`
+
+
+### Assignment 6: [Club Assinging Problem]
+
+- Description: [Branch and bound Application]
+- File(s): `ClubAssinging.java`, `helperFunctions.java`
+
+### Assignment 7: [Mini Project]
+
+- Description: [Greddy Application base coin collection game]
+- Repo Link : [https://github.com/Chetax/Greddy-Aproach-And-Coin-Collection]
+
 
 ## Technologies Used
 
 - Java programming language
-- [Any specific libraries or tools used]
 
-## Folder Structure
+
 
