@@ -19,19 +19,19 @@ This repository contains my assignments for the Design and Analysis subject, imp
 ### Assignment 3: [Flowd Warshall]
 
 - Description: [Shortest Disstance Form every source node  to every  other Node in Graph]
-- File(s): `flowdwarsahll.java`, `helperFunctions.java`
+- File(s): `FlowdWarshall.java`, `helperFunctions.java`
 
 
 ### Assignment 4: [Dijekstra]
 
 - Description: [Shortest Disstance Form One Source to every Node in Graph]
-- File(s): `Dijekstra.java`, `helperFunctions.java`
+- File(s): `Dijekstra.java.java`, `helperFunctions.java`
 
   
 ### Assignment 5: [KnighRidder Problem]
 
 - Description: [Backtraking Application]
-- File(s): `KnighRidderProblem.java`, `helperFunctions.java`
+- File(s): `knighridderProblem.java.java`, `helperFunctions.java`
 
 
 ### Assignment 6: [Club Assinging Problem]
