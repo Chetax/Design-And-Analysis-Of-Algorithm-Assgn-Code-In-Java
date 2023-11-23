@@ -1,58 +1,43 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-
-Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-int[][] mat=new int[n][n];
-for(int i=0;i<n;i++){
+public class clubassin {
+public static void main(String[] args) {
+ Scanner sc=new Scanner(System.in);
+ int n=sc.nextInt();
+ int mat[][]=new int[n][n];
+ for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
     mat[i][j]=sc.nextInt();
     }
-}
+ }
 
-        
-        Map<Integer,Integer>m=new HashMap<>();
-        for(int x=0;x<n;x++) {
-            int miniEle=1000;
-            for(int y=0;y<n;y++) {
-                int sum= mat[x][y];
-                for(int i=0;i<n;i++) {
-                    if(i==y) continue;
-                    int mini= 200;
-                    for(int j=0;j<n;j++) {
-                        
-                        if(j==x) continue;
-                        mini= Math.min(mini,mat[j][i]);
-                    }
-                    sum+=mini;
-                }
-              int pre=m.get(y);
-              if(pre==0)
-              {
-                  if(miniEle>sum){
-                      assign=y;
-                  }
-                  miniEle=Math.min(miniEle,sum);
-                  System.out.println(assign);
-              }
-              
-            }
-            System.out.println("Mini For i "+miniEle);
-            m.put(x,miniEle);
-        }
+
+int assign[]=new int[n];
+ for(int row=0;row<n;row++){
+     int ans[]=new int[n];
+    for(int col=0;col<n;col++){
+        int sum=mat[row][col];
         for(int i=0;i<n;i++){
-          System.out.println(i+1+" "+m.get(i)); 
+            int mini=100;
+            if(i==col) continue;
+            for(int j=0;j<n;j++){
+                if(j==row) continue;
+                if(ans[i]==1000)
+               mini=Math.min(mini,mat[j][i]);
+            }
+          sum+=mini;
         }
-	
-	}	
+         System.err.println(sum);
+ans[col]=sum;
+        }
+        for(int i=0;i<n;i++)
+        System.out.print(" ans: "+ans[i]+" ");
+        System.err.println("");
+    }
 }
+    
+}
+// 4
+// 9 2 7 8
+// 6 4 3 7
+// 5 8 1 8
+// 7 5 2 4
